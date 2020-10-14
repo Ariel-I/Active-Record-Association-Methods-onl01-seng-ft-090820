@@ -12,7 +12,7 @@ class Genre < ActiveRecord::Base
   end
 
   def all_artist_names
-    self.find_by(artists: name)
+    self.find_by(artists)
 
     # return an array of strings containing every musician's name
   end
